@@ -1,0 +1,137 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для заголовков */
+.header__title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #3498db;
+    text-align: center;
+}
+
+/* Стили для навигации */
+.nav__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav__item a:hover {
+    background-color: #ecf0f1;
+    color: #3498db;
+}
+
+/* Стили для секций */
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Проекты */
+.project__item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project__item h4 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.project__item p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+/* Стили для контактов */
+.contact__link {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.contact__link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для цитат */
+.quote {
+    font-style: italic;
+    color: #34495e;
+    text-align: center;
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Преобразование текста */
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.preformatted {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #fafafa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Стиль для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Анимация при наведении */
+.project__item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

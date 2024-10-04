@@ -5,54 +5,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Мое Портфолио</title>
-    <link href="outlines.css" rel="stylesheet">
+    <link href="CSS/outlines.css" rel="stylesheet">
 </head>
 
 <body>
-<header>
-    <h1>Привет!</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#contact">Контакты</a></li>
+<header class="header">
+    <h1 class="header__title">Привет!</h1>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#about">Обо мне</a></li>
+            <li class="nav__item"><a href="#projects">Проекты</a></li>
+            <li class="nav__item"><a href="#contact">Контакты</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section id="about">
+    <section id="about" class="section">
         <h2>Обо мне</h2>
         <p>Меня зовут Поляков Михаил. Мне 20 лет. Я начинающий веб-разработчик</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
         <h2>Мои проекты</h2>
-        <article>
+        <article class="project__item">
             <h4>Project PIG</h4>
             <p>Мой первый школьный проект - простенькая игра-платформер на Unity</p>
         </article>
-        <article>
+        <article class="project__item">
             <h4>Bank Application</h4>
             <p>Веб приложение для управления счетами, вкладами и прочими меркантильными вещами.</p>
         </article>
     </section>
 
-    <section>
+    <section class="section">
         <h2>Успешные успехи</h2>
         <ol>
-            <li>Призер перечневых олимпиад по <strong> математике </strong></li>
+            <li>Призер перечневых олимпиад по <strong class="strikethrough">математике</strong></li>
             <li>Прошел стажировку на <em>C#</em> бэкенд разработчика</li>
         </ol>
     </section>
 </main>
 
 <footer>
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Контакты</h2>
-        <a href="https://t.me/quakushkin">Telegram</a>
+        <a href="https://t.me/quakushkin" class="contact__link">Telegram</a>
 
-        <pre>
+        <pre class="preformatted">
       /\_/\
  /\  / o o \
 //\\ \~(*)~/
@@ -63,7 +63,7 @@
         </pre>
     </section>
     <aside>
-    <pre>
+    <pre class="preformatted">
         |------|
         | лого |
         |------|
@@ -71,17 +71,8 @@
     </aside>
 </footer>
 
-<h3>Запусти меня</h3>
-<pre>
-    <code>int main() {
-        int* ptr = nullptr;
-        std::cout << *ptr << std::endl;
-        return 0;
-    }</code>
-</pre>
-
 <h3>Цитаты великих:</h3>
-<q>
+<q class="quote">
     Вино нам нужно для здоровья. А здоровье нам нужно, чтобы пить водку
 </q>
 <p><cite>Виктор Степанович Черномырдин</cite></p>
