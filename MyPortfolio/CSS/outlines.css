@@ -110,19 +110,18 @@ cite {
     transition: transform 0.4s;
 }
 
-
-.img__right{
-    height: 200px;
-    float: right;
+aside {
+    display: flex;
 }
 
-.img__left{
-    height: 200px;
-    float: left;
+.img__right, .img__left {
+    max-width: 20%;
+    height: 20%;
+    display: block;
+    margin: 0 auto;
 }
 
 .review-form {
-    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ddd;

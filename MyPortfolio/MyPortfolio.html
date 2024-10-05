@@ -63,23 +63,22 @@
         <p><cite>Виктор Степанович Черномырдин</cite></p>
     </div>
 
-    <div class="img">
+    <aside>
         <img class="img__right" src="CSS/pngegg.png"/>
+        <div class="review-form">
+            <h2>Оставьте отзыв</h2>
+            <form method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" required>
+
+                <label for="message">Ваш отзыв:</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </div>
         <img class="img__left" src="CSS/pngegg.png"/>
-    </div>
-
-    <div class="review-form">
-        <h2>Оставьте отзыв</h2>
-        <form method="POST">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" required>
-
-            <label for="message">Ваш отзыв:</label>
-            <textarea id="message" rows="5" required></textarea>
-
-            <button type="submit">Отправить отзыв</button>
-        </form>
-    </div>
+    </aside>
 
 </footer>
 
