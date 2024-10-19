@@ -17,6 +17,19 @@ body {
     margin-bottom: 10px;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+main {
+    margin-top: 140px; /* для того чтобы контент не перекрывался шапкой */
+}
+
 h2 {
     font-size: 2em;
     font-weight: 600;
@@ -58,7 +71,12 @@ h2 {
 }
 
 
-.project__item {
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Два или больше проекта в строке */
+}
+
+.projects__item {
     background-color: #fff;
     padding: 15px;
     border: 2px solid #ccc;
@@ -66,12 +84,12 @@ h2 {
     margin: 20px;
 }
 
-.project__item h4 {
+.projects__item h4 {
     margin-top: 0;
     color: #2c3e50;
 }
 
-.project__item p {
+.projects__item p {
     margin: 5px 0;
     color: #7f8c8d;
 }
@@ -105,7 +123,7 @@ cite {
     text-decoration: line-through;
 }
 
-.project__item:hover {
+.projects__item:hover {
     transform: scale(1.03);
     transition: transform 0.4s;
 }
@@ -155,4 +173,46 @@ aside {
 .review-form button:hover {
     background-color: #e3e7e8;
     color: #3498db;
+}
+
+@media screen and (max-width: 768px) {
+
+    .img__right, .img__left {
+        display: none;
+    }
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
 }
