@@ -73,7 +73,7 @@ h2 {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, auto); /* Два или больше проекта в строке */
+    grid-template-columns: auto auto;
 }
 
 .projects__item {
