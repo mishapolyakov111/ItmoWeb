@@ -222,3 +222,21 @@ table {
     border-radius: 10px;
     overflow: hidden;
 }
+
+.comment {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#preloader {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+}
+
+#contacts {
+    text-align: center;
+}

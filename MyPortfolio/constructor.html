@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Конструктор таблиц</title>
+  <link href="CSS/outlines.css" rel="stylesheet">
+  <script src="js/constructor.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+  <h1 class="header__title">Привет!</h1>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="index.html">Главная</a></li>
+      <li class="nav__item"><a href="projects.html">Проекты</a></li>
+      <li class="nav__item"><a href="achievements.html">Достижения</a></li>
+      <li class="nav__item"><a href="constructor.html">Конструктор</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <h2>Создание таблицы</h2>
+    <form id="table-form" class="review-form">
+      <label for="days">Количество дней:</label>
+      <input type="number" id="days" min="1" max="7" required>
+
+      <label for="lessons">Максимальное количество занятий:</label>
+      <input type="number" id="lessons" min="1" max="10" required>
+
+      <label for="language">Язык:</label>
+      <select id="language">
+        <option value="ru">Русский</option>
+        <option value="en">Английский</option>
+      </select>
+
+      <button type="submit">Создать таблицу</button>
+      <button type="button" id="load-settings">Загрузить параметры</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Результат:</h2>
+    <div id="table-container"></div>
+  </section>
+</main>
+<footer>
+  <p>Пу-пу-пуу</p>
+</footer>
+</body>
+</html>
