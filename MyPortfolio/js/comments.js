@@ -42,10 +42,23 @@
         comments.forEach((comment) => {
             const commentElement = document.createElement("div");
             commentElement.classList.add("comment");
-            commentElement.innerHTML =
-                `<h3>${comment.name}</h3>
-                <p><strong>Email:</strong> ${comment.email}</p>
-                <p>${comment.body}</p>`;
+
+            const nameElement = document.createElement("h3");
+            nameElement.textContent = comment.name;
+
+            const emailElement = document.createElement("p");
+            const emailBold = document.createElement("strong");
+            emailBold.textContent = "Email:";
+            emailElement.appendChild(emailBold);
+            emailElement.append(`${comment.email}`);
+
+            const bodyElement = document.createElement("p");
+            bodyElement.textContent = comment.body;
+
+            commentElement.appendChild(nameElement);
+            commentElement.appendChild(emailElement);
+            commentElement.appendChild(bodyElement);
+
             commentsContainer.appendChild(commentElement);
         });
     }
